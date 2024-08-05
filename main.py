@@ -21,7 +21,7 @@ if __name__ == "__main__":
     file_name = 'input_data.csv'
     prices_data = preprocess_data(file_name)
 
-    # Calculate revenues for the basic strategy
+    # Calculate revenues for the baseline strategy
     daily_revenue_df, annual_revenue_df = calculate_basic_strategy_revenues(prices_data, capacity=100, power=100,
                                                                             round_trip_eff=0.85)
 
